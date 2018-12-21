@@ -3,14 +3,14 @@
 %Zad. 1
 % WPC=0.2;
 % l=[-1.5, -1, -.5, 0, .5, 1, 1.5];
-% for(lambda=l) %dla wszystkich wartoœci lambdy z polecenia
+% for(lambda=l) %dla wszystkich wartoÅ“ci lambdy z polecenia
 %     figure; 
 %     hold on;
 %     title(strcat('lambda = ',num2str(lambda),' WPC = ',num2str(WPC)));
 %     lambda;
-%     sim('modl3'); %obliczam rozwi¹zanie dyskretne
+%     sim('modl3'); %obliczam rozwiÂ¹zanie dyskretne
 %     for(i=1:11)
-%         plot(i,x(i),'*r'); %rysujê wykres
+%         plot(i,x(i),'*r'); %rysujÃª wykres
 %     end;
 % end;
 
@@ -28,6 +28,7 @@ D=zeros(size(B));
 
 Adys = expm(h*A);
 Bdys = double( int(expm(s*A)*B,s,0,h));
+syms s;
 Cdys = C;
 
 sim('sim3');
@@ -40,14 +41,14 @@ for(i=1:11)
        plot(i-1,discrete(i,1),'*r');
        plot(i-1,discrete(i,2:end),'*c');
 end;
-title('Rozwi¹zania ci¹g³e i dysretne');
+title('RozwiÂ¹zania ciÂ¹gÂ³e i dysretne');
 
 
 %Zadanie 3
 %Odsetki 10% w skali roku
 
 figure;
-WPC = 1000; %1000z³
+WPC = 1000; %1000zÂ³
 hold on
 for m = 1:365
    WK = WPC * ( 1 + 0.1/m) ^ m;
