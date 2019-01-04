@@ -3,8 +3,8 @@ Sprawozdanie 4
 Zadanie 1
 
 Zadanie 2
-G1: Kryterium Nyquista jest spe³nione, system jest stabilny.
-G2: Kryterium Nyquista niejest spe³nione, system jest niestabilny.
+G1: Kryterium Nyquista jest speÅ‚nione, system jest stabilny.
+G2: Kryterium Nyquista niejest speÅ‚nione, system jest niestabilny.
 Zadanie 3
 
 Zadanie 4
